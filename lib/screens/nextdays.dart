@@ -11,6 +11,7 @@ class NextDays extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
+            width: MediaQuery.of(context).size.width * 0.28,
             padding: const EdgeInsets.all(15),
             decoration: const BoxDecoration(
               color: Color.fromARGB(255, 26, 28, 73),
@@ -19,7 +20,8 @@ class NextDays extends StatelessWidget {
             child: Column(
               children: const [
                 Text(
-                  '+30.0\u2103',
+                  '+30.0°C',
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
@@ -27,6 +29,7 @@ class NextDays extends StatelessWidget {
                 ),
                 Text(
                   'Friday',
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -36,6 +39,7 @@ class NextDays extends StatelessWidget {
             ),
           ),
           Container(
+            width: MediaQuery.of(context).size.width * 0.28,
             padding: const EdgeInsets.all(15),
             decoration: const BoxDecoration(
               color: Color.fromARGB(255, 26, 28, 73),
@@ -44,7 +48,8 @@ class NextDays extends StatelessWidget {
             child: Column(
               children: const [
                 Text(
-                  '+30.0\u2103',
+                  '+30.0°C',
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
@@ -52,6 +57,7 @@ class NextDays extends StatelessWidget {
                 ),
                 Text(
                   'Friday',
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
@@ -61,6 +67,7 @@ class NextDays extends StatelessWidget {
             ),
           ),
           Container(
+            width: MediaQuery.of(context).size.width * 0.28,
             padding: const EdgeInsets.all(15),
             decoration: const BoxDecoration(
               color: Color.fromARGB(255, 26, 28, 73),
@@ -69,7 +76,8 @@ class NextDays extends StatelessWidget {
             child: Column(
               children: const [
                 Text(
-                  '+30.0\u2103',
+                  '+30.0°C',
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18,
@@ -77,6 +85,7 @@ class NextDays extends StatelessWidget {
                 ),
                 Text(
                   'Friday',
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,

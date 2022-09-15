@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:weatherapp/header.dart';
-import 'package:weatherapp/maincard.dart';
-import 'package:weatherapp/moreinfo.dart';
-import 'package:weatherapp/nextdays.dart';
-import 'package:weatherapp/searchheader.dart';
+import 'package:weatherapp/screens/header.dart';
+import 'package:weatherapp/screens/maincard.dart';
+import 'package:weatherapp/screens/moreinfo.dart';
+import 'package:weatherapp/screens/nextdays.dart';
+import 'package:weatherapp/screens/searchheader.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
             SizedBox(),
             MainCard(),
             SizedBox(
-              height: 5,
+              height: 15,
             ),
             MoreInfo(),
             SizedBox(

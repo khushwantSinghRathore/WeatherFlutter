@@ -7,7 +7,7 @@ class MainCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(left: 30, top: 30, right: 30),
-      padding: const EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 5),
+      padding: const EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 10),
       decoration: const BoxDecoration(
         color: Color.fromARGB(255, 26, 28, 73),
         borderRadius: BorderRadius.all(
@@ -21,6 +21,7 @@ class MainCard extends StatelessWidget {
             children: const [
               Text(
                 'Today',
+                overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
@@ -36,18 +37,21 @@ class MainCard extends StatelessWidget {
             height: 20,
           ),
           Row(
+            mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(
+              Wrap(
                 children: const [
                   Text(
                     '+30.0',
+                    overflow: TextOverflow.ellipsis,
                     style: TextStyle(color: Colors.white, fontSize: 40),
                   ),
                   Align(
                     alignment: Alignment.bottomLeft,
                     child: Text(
-                      '\u2103',
+                      '°C',
+                      overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         color: Colors.yellowAccent,
                         fontSize: 30,
@@ -56,10 +60,14 @@ class MainCard extends StatelessWidget {
                   ),
                 ],
               ),
-              const Image(
-                fit: BoxFit.fitWidth,
-                width: 100,
-                image: AssetImage('images/few-clouds.png'),
+              Wrap(
+                children: [
+                  Image(
+                    fit: BoxFit.fitWidth,
+                    width: MediaQuery.of(context).size.width * 0.3,
+                    image: const AssetImage('images/few-clouds.png'),
+                  ),
+                ],
               )
             ],
           ),
