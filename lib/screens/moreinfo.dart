@@ -6,7 +6,8 @@ class MoreInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 30, top: 15, right: 30),
+      margin: const EdgeInsets.only(left: 20, top: 15, right: 20),
+      width: MediaQuery.of(context).size.width * 0.9,
       child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           mainAxisSize: MainAxisSize.max,
@@ -15,7 +16,7 @@ class MoreInfo extends StatelessWidget {
             //   width: 10,
             // ),
             Container(
-              width: MediaQuery.of(context).size.width * 0.40,
+              width: MediaQuery.of(context).size.width * 0.42,
               padding: const EdgeInsets.all(20),
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(18)),
@@ -56,7 +57,7 @@ class MoreInfo extends StatelessWidget {
               ),
             ),
             Container(
-              width: MediaQuery.of(context).size.width * 0.40,
+              width: MediaQuery.of(context).size.width * 0.42,
               padding: const EdgeInsets.all(20),
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(18)),

@@ -6,7 +6,7 @@ class MainCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 30, top: 30, right: 30),
+      margin: const EdgeInsets.only(left: 20, top: 20, right: 20),
       padding: const EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 10),
       decoration: const BoxDecoration(
         color: Color.fromARGB(255, 26, 28, 73),
@@ -15,6 +15,7 @@ class MainCard extends StatelessWidget {
         ),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -37,37 +38,35 @@ class MainCard extends StatelessWidget {
             height: 20,
           ),
           Row(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Wrap(
-                children: const [
-                  Text(
-                    '+30.0',
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(color: Colors.white, fontSize: 40),
-                  ),
-                  Align(
-                    alignment: Alignment.bottomLeft,
-                    child: Text(
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.4,
+                child: Wrap(
+                  direction: Axis.horizontal,
+                  children: const [
+                    Text(
+                      '+30.0',
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(color: Colors.white, fontSize: 40),
+                    ),
+                    Text(
                       '°C',
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         color: Colors.yellowAccent,
-                        fontSize: 30,
+                        fontSize: 20,
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-              Wrap(
-                children: [
-                  Image(
-                    fit: BoxFit.fitWidth,
-                    width: MediaQuery.of(context).size.width * 0.3,
-                    image: const AssetImage('images/few-clouds.png'),
-                  ),
-                ],
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.35,
+                child: const Image(
+                  alignment: Alignment.centerLeft,
+                  fit: BoxFit.fill,
+                  image: AssetImage('images/few-clouds.png'),
+                ),
               )
             ],
           ),

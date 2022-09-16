@@ -6,7 +6,7 @@ class NextDays extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 30, top: 15, right: 30),
+      margin: const EdgeInsets.only(left: 20, top: 15, right: 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

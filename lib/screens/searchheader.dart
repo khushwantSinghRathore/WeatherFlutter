@@ -6,7 +6,7 @@ class Searchbarheader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 30, top: 30, right: 30),
+      margin: const EdgeInsets.only(left: 20, top: 20, right: 20),
       child: const TextField(
         style: TextStyle(
             color: Colors.grey, fontSize: 18, fontWeight: FontWeight.w600),
