@@ -6,21 +6,21 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left: 30, top: 30, right: 30),
+      margin: const EdgeInsets.only(left: 20, top: 50, right: 20, bottom: 5),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: const [
           Icon(
             Icons.apps,
             color: Colors.white,
-            size: 30,
+            size: 32,
           ),
           Center(
             child: Text(
               'Weater Forcast',
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 24,
+                  fontSize: 25,
                   fontWeight: FontWeight.w700),
             ),
           ),
